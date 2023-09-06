@@ -1,5 +1,4 @@
-<div class="container">
-  <header
+<header
   class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
   <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
     <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
@@ -19,8 +18,32 @@
     <!-- <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">LogOut</button> -->
   </div>
 </header>
-  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-    <h1 class="display-4 fw-normal">Bienvido!</h1>
-    <p class="fs-5 text-muted">{{ dataUser?.email }}</p>
+<div class="container pd-4">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <h3>Agregar Usuarios</h3>
+          <form class="mt-4">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Instancia">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Usuarios">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Clave">
+              </div>
+            </div>
+            <div class="mt-3">
+              <button class="btn btn-secondary btn-lg" type="text" style="margin-right: 5px;"
+                routerLink="/list">Volver</button>
+              <button class="btn btn-dark btn-lg" type="submit">Agregar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
